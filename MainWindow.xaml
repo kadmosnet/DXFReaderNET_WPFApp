@@ -1,0 +1,16 @@
+﻿<Window x:Class="DXFReaderNET_WPFApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DXFReaderNET_WPFApp"
+        mc:Ignorable="d"
+        xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:legacy="clr-namespace:DXFReaderNET;assembly=DXFReaderNET"
+        Title="DXFReaderNET WPF App" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <wfi:WindowsFormsHost x:Name="DXFReaderNET" >
+            <legacy:DXFReaderNETControl x:Name="myDXFReaderNET" />
+        </wfi:WindowsFormsHost>
+    </Grid>
+</Window>
